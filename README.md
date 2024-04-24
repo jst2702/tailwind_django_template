@@ -90,3 +90,56 @@ python manage.py tailwind start
 python manage.py livereload
 python manage.py runserver
 ```
+```
+tailwind_django_template
+├─ all-project-assets
+│  │  ├─ bg-dots.svg
+│  │  ├─ favicon-32x32.png
+│  │  ├─ icon-arrow.svg
+│  │  ├─ icon-close.svg
+├─ crm
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ templates
+│  │  └─ crm
+│  │     ├─ index.html
+│  │     └─ signup.html
+│  ├─ tests.py
+│  ├─ urls.py
+│  ├─ views.py
+│  └─ __init__.py
+├─ LICENSE
+├─ manage.py
+├─ poetry.lock
+├─ pyproject.toml
+├─ README.md
+├─ tailwind_django_template
+│  ├─ asgi.py
+│  ├─ settings.py
+│  ├─ urls.py
+│  ├─ wsgi.py
+│  └─ __init__.py
+├─ tests
+│  └─ __init__.py
+└─ theme
+   ├─ apps.py
+   ├─ README.md
+   ├─ static
+   │  └─ css
+   ├─ static_src
+   │  ├─ .gitignore
+   │  ├─ node_modules
+   │  ├─ package-lock.json
+   │  ├─ package.json
+   │  ├─ postcss.config.js
+   │  ├─ src
+   │  │  └─ styles.css
+   │  └─ tailwind.config.js
+   ├─ templates
+   │  └─ base.html
+   └─ __init__.py
+
+```
