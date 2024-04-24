@@ -31,7 +31,8 @@ INSTALLED_APPS = [
 
     'crm', # Django app
 
-    'django_browser_reload',
+    # 'django_browser_reload',
+    'livereload'
 ]
 
 TAILWIND_APP_NAME = 'theme'
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     
     "django_browser_reload.middleware.BrowserReloadMiddleware",
+    "livereload.middleware.LiveReloadScript",
 ]
 
 ROOT_URLCONF = "tailwind_django_template.urls"

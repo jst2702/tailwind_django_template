@@ -78,3 +78,15 @@ Startup your main server with
 ```
 python manage.py runserver
 ```
+
+## For live reloads
+```
+poetry add django-livereload-server
+``` 
+Add `livereload` to `INSTALLED_APPS`<br>
+Add `livereload.middleware.LiveReloadScript` to your `MIDDLEWARE`
+```
+python manage.py tailwind start
+python manage.py livereload
+python manage.py runserver
+```
