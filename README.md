@@ -79,7 +79,7 @@ This is django so lets show how to add another app. Call it `crm`
 ```
 django-admin startapp crm
 ```
-of `csp` if it's a content sharing platform, ect.
+or `csp` if it's a content sharing platform, ect.
 
 Add your app to the `settings.py`
 
