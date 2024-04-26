@@ -113,12 +113,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-
-# STATIC_URL = "./all-project-assets/"
 STATIC_URL = 'static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # Additional directory for static files
     # Add more directories if needed

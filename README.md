@@ -1,12 +1,7 @@
 # tailwind_django_template
-Template (done on windows, but should work fine on linux)
-
-Try installing this instead, honestly
-https://pypi.org/project/pytailwindcss/
+This is a basic template (done on windows, but should work fine on linux) with some page and app examples of using tailwind with django. It uses this library for tailwind integration https://pypi.org/project/pytailwindcss/.
 
 ## Getting started
-Similar video instructions available here: https://www.youtube.com/watch?v=76n7sqZocSk
-
 Create your poetry project
 ```
 poetry new <project_name>
@@ -23,7 +18,7 @@ Run migration
 ```
 python manage.py migrate
 ```
-Run server
+Run server to make sure this works
 ```
 python manage.py runserver
 ```
@@ -73,6 +68,8 @@ content: [
 ],
 ```
 
+Look at code in `./crm/templates/*.html` files for how to use basic tailwind styling from the app.
+
 ## Adding apps
 
 This is django so lets show how to add another app. Call it `crm`
@@ -83,7 +80,10 @@ or `csp` if it's a content sharing platform, ect.
 
 Add your app to the `settings.py`
 
-Configure urls, views and routing.
+Configure urls, views and routing. Look at the code files below for examples:
+* `./tailwind_django_template/urls.py`
+* `./crm/urls.py`
+* `./crm/views.py`
 
 ## For live reloads and refreshes
 ```
