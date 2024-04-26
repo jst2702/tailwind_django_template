@@ -1,26 +1,21 @@
-{% load static tailwind_tags %}
-
-<html>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Webpage</title>
-    {% tailwind_css %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static '/css/output.css' %}">
 </head>
 <body>
-
-<h1 class="">
-    Hello world! desu
-</h1>
-
-<p>
-    This is my amazing website.
-</p>
-
-<!-- Add navigation link to signup.html -->
-<a href="{% url 'signup' %}">Signup</a>
-<a href="{% url 'pricing' %}">Pricing</a>
-<a href="{% url 'modal' %}">Modal</a>
-<a href="{% url 'gallery' %}">Gallery</a>
-<a href="{% url 'login' %}">Login</a>
-
+    <div class="flex items-center justify-center h-screen bg-zinc-700">
+        <div class="text-white font-bold flex flex-col md:flex-row space-y-4 md: space-x-4 md:space-y-0">
+            <a href="{% url 'signup' %}">Signup</a>
+            <a href="{% url 'pricing' %}">Pricing</a>
+            <a href="{% url 'modal' %}">Modal</a>
+            <a href="{% url 'gallery' %}">Gallery</a>
+            <a href="{% url 'login' %}">Login</a>
+        </div>
+    </div>
 </body>
 </html>

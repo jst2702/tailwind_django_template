@@ -68,21 +68,15 @@ django = ">=1.8"
 tornado = "*"
 
 [[package]]
-name = "django-tailwind"
-version = "3.8.0"
-description = "Tailwind CSS Framework for Django projects"
+name = "pytailwindcss"
+version = "0.2.0"
+description = "Standalone Tailwind CSS CLI, installable via pip. Use Tailwind CSS without Node.js."
 optional = false
-python-versions = ">=3.10.0,<4.0.0"
+python-versions = ">=3.8,<4.0"
 files = [
-    {file = "django_tailwind-3.8.0-py3-none-any.whl", hash = "sha256:fa969c5b95d314b173fe2b2ed2cb2c03f2e2c94fdc2c01ff73a993fa159085da"},
-    {file = "django_tailwind-3.8.0.tar.gz", hash = "sha256:31c2f4a7879d685c2de0feaf0b63f246200b37337bea4d7dbafb59bc3f10c008"},
+    {file = "pytailwindcss-0.2.0-py3-none-any.whl", hash = "sha256:30e7bd3b78de19a39a7e66329db02d393ee540f010924397b4d780e85041fae4"},
+    {file = "pytailwindcss-0.2.0.tar.gz", hash = "sha256:112718583a33f42c57b2718270dd0e0605574da0023cab4829fad3a98ebe450b"},
 ]
-
-[package.dependencies]
-django = ">=3.2.14"
-
-[package.extras]
-reload = ["django-browser-reload (>=1.12.1,<2.0.0)"]
 
 [[package]]
 name = "sqlparse"
@@ -144,4 +138,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5fb9531a44a8cb6bc23114eb4c3bb25568474c64fc8e3d7c16b6ed265b8d7165"
+content-hash = "750299378d0e2c6b0cd084b7c2130cb3ea2fc90aed8f2d707f8b4fa6bafabbd7"
