@@ -1,6 +1,9 @@
 # tailwind_django_template
 Template (done on windows, but should work fine on linux)
 
+Try installing this instead, honestly
+https://pypi.org/project/pytailwindcss/
+
 ## Getting started
 Similar video instructions available here: https://www.youtube.com/watch?v=76n7sqZocSk
 

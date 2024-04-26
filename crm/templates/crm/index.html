@@ -1,22 +1,26 @@
 {% load static tailwind_tags %}
 
 <html>
-    <head>
-        <title>Webpage</title>
-        {% tailwind_css %}
-    </head>
+<head>
+    <title>Webpage</title>
+    {% tailwind_css %}
+</head>
+<body>
 
-    <h1 class="">
-        Hello world! desu
-    </h1>
+<h1 class="">
+    Hello world! desu
+</h1>
 
-    <p>
-        This is my amazing website.
-    </p>
+<p>
+    This is my amazing website.
+</p>
+
+<!-- Add navigation link to signup.html -->
+<a href="{% url 'signup' %}">Signup</a>
+<a href="{% url 'pricing' %}">Pricing</a>
+<a href="{% url 'modal' %}">Modal</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'login' %}">Login</a>
+
+</body>
 </html>
-
-
-
-
-
-

@@ -5,3 +5,7 @@
 h1 {
     @apply text-2xl;
 }
+
+input {
+    @apply focus:outline-none;
+}
