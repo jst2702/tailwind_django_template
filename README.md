@@ -32,24 +32,46 @@ Install project
 poetry install
 ```
 
-## Settings
-
-Follow instructions provided here, after installing `django-tailwind`:
-https://django-tailwind.readthedocs.io/en/latest/installation.html Up to **step 6**.
-
-Install node if you don't have it (check with `npm` command).
-
-
-Add your `npm.cmd` filepath to your `settings.py`<br>
-You can find it with the command:
+## Add statics
+Create your `static` folder<br>
+Then add static refs to your `settings.py` file
 ```
-where npm
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Additional directory for static files
+    # Add more directories if needed
+]
 ```
+## Add pytailwindcss
 ```
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+poetry add pytailwindcss
 ```
+create a folder in `./static/css`. <br>
+Within that folder run :
+```
+tailwindcss init
+```
+and create an `input.css` file, ie.
+```
+/* input.css */
 
-Resume instructions from **Step 7-8** (we will not use the `base.html` file instead, opting for more elegance).
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer for h1 */
+h1 {
+  @apply text-4xl font-bold text-blue-500;
+}
+```
+Set the content field to something appropriate to your project file structure, ie.
+```
+content: [
+   '../templates/**/*.html',
+   '../../templates/**/*.html',
+   '../../**/templates/**/*.html',
+],
+```
 
 ## Adding apps
 
@@ -63,33 +85,28 @@ Add your app to the `settings.py`
 
 Configure urls, views and routing.
 
-Create a `crm/urls.py` file and add
-
-Resume instruction from **Step 9**
-
-```
-poetry add django-browser-reload
-```
-
-## Startup the servers
-Startup the tailwind server with 
-```
-python manage.py tailwind start
-```
-
-Startup your main server with 
-```
-python manage.py runserver
-```
-
-## For live reloads
+## For live reloads and refreshes
 ```
 poetry add django-livereload-server
+poetry add django-browser-reload
 ``` 
 Add `livereload` to `INSTALLED_APPS`<br>
-Add `livereload.middleware.LiveReloadScript` to your `MIDDLEWARE`
+Add the following middleware
 ```
-python manage.py tailwind start
+"django_browser_reload.middleware.BrowserReloadMiddleware",
+"livereload.middleware.LiveReloadScript",
+```
+## Run servers
+All commands
+tailwind (from `static/css` folder)
+```
+tailwindcss -i input.css -o output.css --watch
+```
+livereload (from root)
+```
 python manage.py livereload
+```
+django server (from root)
+```
 python manage.py runserver
 ```
