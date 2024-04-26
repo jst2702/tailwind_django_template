@@ -1,0 +1,11 @@
+/* input.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer for h1 */
+h1 {
+  @apply text-4xl font-bold text-blue-500; /* Apply Tailwind CSS classes to h1 */
+  /* Add more custom styles for h1 if needed */
+}
