@@ -18,3 +18,10 @@ def gallery(requests):
 
 def login(requests):
     return render(requests, 'crm/login.html')
+
+# Clipboard "website"
+def clipboard(requests):
+    return render(requests, 'clipboard/index.html')
+
+def loopstudios(requests):
+    return render(requests, 'loopstudios/index.html')
