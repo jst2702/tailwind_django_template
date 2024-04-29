@@ -8,4 +8,9 @@ urlpatterns = [
     path('modal/', views.product_model, name='modal'),
     path('gallery/', views.gallery, name='gallery'),
     path('login/', views.login, name='login'),
+
+    # Clipboard urls
+    path('clipboard/', views.clipboard, name='clipboard'),
+    path('loopstudios/', views.loopstudios, name='loopstudios'),
+
 ]
