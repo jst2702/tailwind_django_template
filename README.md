@@ -1,6 +1,8 @@
 # tailwind_django_template
 This is a basic template (done on windows, but should work fine on linux) with some page and app examples of using tailwind with django. It uses this library for tailwind integration https://pypi.org/project/pytailwindcss/.
 
+The mini projects are taken from here: https://github.com/bradtraversy/tailwind-course-projects
+
 ## Getting started
 Create your poetry project
 ```
