@@ -50,7 +50,12 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'],
+        josefin: ['Josefin Sans', 'sans-serif'],
+        alata: ['Alata']
       },
+      letterSpacing: {
+        widest: '.1em'
+      }
     },
   },
   plugins: [],
