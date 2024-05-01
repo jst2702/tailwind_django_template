@@ -12,5 +12,5 @@ urlpatterns = [
     # Clipboard urls
     path('clipboard/', views.clipboard, name='clipboard'),
     path('loopstudios/', views.loopstudios, name='loopstudios'),
-
+    path('shortly/', views.shortly, name='shortly'),
 ]

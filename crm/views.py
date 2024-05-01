@@ -25,3 +25,6 @@ def clipboard(requests):
 
 def loopstudios(requests):
     return render(requests, 'loopstudios/index.html')
+
+def shortly(requests):
+    return render(requests, 'shortly/index.html')

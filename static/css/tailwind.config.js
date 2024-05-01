@@ -45,16 +45,27 @@ module.exports = {
       colors: {
         strongCyan: 'hsl(171, 66%, 44%)',
         lightBlue: 'hsl(233, 100%, 69%)',
+        shortlyCyan: 'hsl(180, 66%, 49%)',
+        cyanLight: 'hsl(180, 66%, 69%)',
         darkGrayishBlue: 'hsl(210, 10%, 33%)',
+        darkViolet: 'hsl(257, 27%, 26%)',
         grayishBlue: 'hsl(201, 11%, 66%)',
+        shortlyRed: 'hsl(0, 87%, 67%)',
+        grayishViolet: 'hsl(257, 7%, 63%)',
+        veryDarkBlue: 'hsl(255, 11%, 22%)',
+        veryDarkViolet: 'hsl(260, 8%, 14%) ',
       },
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'],
         josefin: ['Josefin Sans', 'sans-serif'],
-        alata: ['Alata']
+        alata: ['Alata'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       letterSpacing: {
         widest: '.1em'
+      },
+      spacing: {
+        180: '32rem',
       }
     },
   },
