@@ -11,12 +11,7 @@ linkForm.addEventListener('submit', formSubmit)
 // Toggle Mobile Menu
 function navToggle() {
   btn.classList.toggle('open');
-  menu.classList.toggle('visible'); // Toggle the 'visible' class instead of 'flex' and 'hidden'
-  
-  // Delay the toggle of 'hidden' class to allow CSS transition
-  setTimeout(() => {
-    menu.classList.toggle('hidden');
-  }, 300); // Adjust the delay to match the transition duration (300ms in this case)
+  menu.classList.toggle('visible');
 }
 
 // Validate a URL

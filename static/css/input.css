@@ -148,7 +148,7 @@
 #menu.visible {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0); /* Slide down when becoming visible */
+  transform: translateY(0);
 }
 
 /* Custom layer for h1 */

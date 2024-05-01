@@ -2083,7 +2083,6 @@ h1 {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  /* Slide down when becoming visible */
 }
 
 /* Custom layer for h1 */
@@ -2620,6 +2619,10 @@ h1 {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-1\/2 {
