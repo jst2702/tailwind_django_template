@@ -28,3 +28,6 @@ def loopstudios(requests):
 
 def shortly(requests):
     return render(requests, 'shortly/index.html')
+
+def testimonials(requests):
+    return render(requests, 'testimonials/index.html')
