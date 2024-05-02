@@ -13,4 +13,5 @@ urlpatterns = [
     path('clipboard/', views.clipboard, name='clipboard'),
     path('loopstudios/', views.loopstudios, name='loopstudios'),
     path('shortly/', views.shortly, name='shortly'),
+    path('testimonials/', views.testimonials, name='testimonials'),
 ]
