@@ -31,3 +31,6 @@ def shortly(requests):
 
 def testimonials(requests):
     return render(requests, 'testimonials/index.html')
+
+def fylo(requests):
+    return render(requests, 'fylo/index.html')
