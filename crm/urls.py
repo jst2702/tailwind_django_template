@@ -14,4 +14,5 @@ urlpatterns = [
     path('loopstudios/', views.loopstudios, name='loopstudios'),
     path('shortly/', views.shortly, name='shortly'),
     path('testimonials/', views.testimonials, name='testimonials'),
+    path('bookmark/', views.bookmark, name='bookmark'),
 ]

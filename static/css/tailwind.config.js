@@ -52,15 +52,22 @@ module.exports = {
         grayishBlue: 'hsl(201, 11%, 66%)',
         shortlyRed: 'hsl(0, 87%, 67%)',
         grayishViolet: 'hsl(257, 7%, 63%)',
-        veryDarkBlue: 'hsl(255, 11%, 22%)',
         veryDarkViolet: 'hsl(260, 8%, 14%) ',
+        softBlue: 'hsl(231, 69%, 60%)',
+        softRed: 'hsl(0, 94%, 66%)',
+        grayishBlue: 'hsl(229, 8%, 60%)',
+        veryDarkBlue: 'hsl(229, 31%, 21%)',
       },
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'],
         josefin: ['Josefin Sans', 'sans-serif'],
         alata: ['Alata'],
         poppins: ['Poppins', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
       },
+      backgroundImage: () => ({
+        dots: "url('../clipboard/images/bg-dots.svg')",
+      }),
       letterSpacing: {
         widest: '.1em'
       },

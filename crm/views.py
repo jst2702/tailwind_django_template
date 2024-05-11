@@ -31,3 +31,6 @@ def shortly(requests):
 
 def testimonials(requests):
     return render(requests, 'testimonials/index.html')
+
+def bookmark(requests):
+    return render(requests, 'bookmark/index.html')

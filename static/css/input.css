@@ -24,6 +24,12 @@
   background-size: contain;
 }
 
+.dots-bg {
+  background-image: url('../clipboard/images/bg-dots.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .ficon:hover {
   filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
   brightness(101%) contrast(94%)
@@ -107,6 +113,14 @@
   }
 }
 
+#bookmark-nav {
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    background: #000;
+  }
+}
+
 .hamburger-middle {
   transform: translateY(7px);
 }
@@ -119,6 +133,14 @@
   transform: rotate(90deg);
 }
 
+#bookmark-nav {
+  .open  {
+    position: fixed;
+    top: 50px;
+    right: 25px;
+  }
+}
+
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
 }
@@ -129,6 +151,14 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+#bookmark-nav {
+  .open .hamburger-top,
+  .open .hamburger-middle,
+  .open .hamburger-bottom {
+    background: #fff;
+  }
 }
 
 #cta {
@@ -151,6 +181,20 @@
   transform: translateY(0);
 }
 
+@media screen(lg) {
+  .bg-hero {
+    width: 2000px;
+    height: 300px;
+    left: 30%;
+    @apply absolute rounded-l-full top-52 bg-softBlue
+  }
+  .bg-tabs {
+    width: 2000px;
+    height: 300px;
+    right: 60%;
+    @apply absolute rounded-r-full top-60 bg-softBlue
+  }
+}
 /* Custom layer for h1 */
 h1 {
   @apply text-4xl font-bold text-blue-500; /* Apply Tailwind CSS classes to h1 */
